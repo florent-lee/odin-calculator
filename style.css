@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+.item {
+    border: black solid 1px;
+    background-color: ;
+    box-sizing: border-box;
+    align-content: center;
+    text-align: center;
+}
+
+.title {
+    grid-column: 1/4;
+    background-color: gray;
+}
+
+.number {
+    grid-column: 1/5;
+    text-align: right;
+}
+
+.value {
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 50px;
+}
+
+.initialize {
+    background-color: aqua;
+}
+
+.operate {
+    background-color: aqua;
+}
+
+@keyframes buttonClick {
+    0% { background-color: #ddd; }
+    100% { background-color: initial; }
+}
+
+.button-click {
+    animation: buttonClick 0.3s ease;
+}
